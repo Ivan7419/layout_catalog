@@ -1,0 +1,32 @@
+@use './stars.scss';
+@use './product-card.scss';
+
+$catalog-padding: 50px 40px;
+$catalog-gap-row: 48px;
+$catalog-gap-col: 46px;
+
+.catalog {
+  margin: 0 auto;
+  padding: $catalog-padding;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $catalog-gap-row $catalog-gap-col;
+}
+
+@media (min-width: 488px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
