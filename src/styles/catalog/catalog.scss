@@ -2,8 +2,8 @@
 @use './product-card.scss';
 
 $catalog-padding: 50px 40px;
-$catalog-gap-row: 48px;
-$catalog-gap-col: 46px;
+$catalog-gap-row: 46px;
+$catalog-gap-col: 48px;
 
 .catalog {
   margin: 0 auto;
@@ -12,6 +12,7 @@ $catalog-gap-col: 46px;
   display: grid;
   grid-template-columns: repeat(1, 200px);
   gap: $catalog-gap-row $catalog-gap-col;
+  box-sizing: border-box;
 }
 
 @media (min-width: 488px) {
